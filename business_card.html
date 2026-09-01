@@ -3,75 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>כרטיס ביקור</title>
+    <title>כרטיס ביקור | רומי שושני</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">דילוג לתוכן המרכזי</a>
 
-    <main class="business-card">
+    <header class="site-header">
+        <div class="navigation-container">
+            <a class="brand" href="#home" aria-label="חזרה לראש העמוד">
+                <span class="brand-mark" aria-hidden="true">RS</span>
+                <span class="brand-name">רומי שושני</span>
+            </a>
 
-        <header class="profile-header">
-            <h1 class="full-name">רומי שושני</h1>
-            <h2 class="job-title">מפתחת DevOps</h2>
-        </header>
+            <nav class="main-navigation" aria-label="ניווט ראשי">
+                <ul class="navigation-list">
+                    <li><a class="navigation-link" href="#about">קצת עליי</a></li>
+                    <li><a class="navigation-link" href="#skills">כישורים</a></li>
+                    <li><a class="navigation-link" href="#projects">פרויקטים</a></li>
+                    <li><a class="navigation-link" href="#contact">יצירת קשר</a></li>
+                </ul>
+            </nav>
 
-        <section class="profile-image-section">
-            <img
-                class="profile-image"
-                src="profile-image.jpg"
-                alt="תמונת פרופיל"
-            >
-        </section>
+            <div class="theme-control">
+                <input class="theme-toggle" type="checkbox" id="theme-toggle">
+                <label class="theme-toggle-label" for="theme-toggle">
+                    <span class="moon-icon" aria-hidden="true">🌙</span>
+                    <span class="sun-icon" aria-hidden="true">☀️</span>
+                </label>
+            </div>
+        </div>
+    </header>
 
-        <section class="about-section">
-            <h2 class="section-title">קצת עליי</h2>
-            <p class="about-me">
-                עשיתי קורס DevOps, אחרי הקורס הגעתי לצוות DBA, לאחר שנה וחצי בתפקיד חזרתי להדריך בקורס DevOps, בסיום ההדרכה חזרתי לתפקיד ראש צוות DBA. עשיתי את התפקיד במשך שנה וחצי ולאחריו עברתי לצוות DevOps, שם עשיתי כל מיני פרוייקטים המשלבים כלי DevOps שונים כמו Jenkins, ArgoCD, Git וכו'
-            </p>
-        </section>
+    <main id="main-content">
+        <section class="hero" id="home" aria-labelledby="profile-name">
+            <div class="hero-content">
+                <p class="eyebrow">DIGITAL BUSINESS CARD</p>
+                <h1 class="full-name" id="profile-name">רומי שושני</h1>
+                <p class="job-title">מפתחת DevOps</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#contact">ליצירת קשר</a>
+                    <a class="button button-secondary" href="#projects">לפרויקטים שלי</a>
+                </div>
+            </div>
 
-        <section class="contact-section">
-            <h2 class="section-title">פרטי קשר</h2>
-
-            <p class="contact-item">
-                <span class="contact-label">GitHub:</span>
-                <a
-                    class="github-link"
-                    href="https://github.com/romishoshani12/Web-Applicatins-Task1.git"
-                    target="https://github.com/romishoshani12/Web-Applicatins-Task1.git"
-                    rel="noopener noreferrer"
+            <figure class="profile-visual">
+                <img
+                    class="profile-image"
+                    src="profile-image.jpg"
+                    alt="תמונת פרופיל"
                 >
-                    קישור לחשבון ה-GitHub
-                </a>
-            </p>
-
-            <p class="contact-item">
-                <span class="contact-label">LinkedIn:</span>
-                <a
-                    class="linkedin-link"
-                    href="https://www.linkedin.com/in/romi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    קישור לפרופיל ה-LinkedIn
-                </a>
-            </p>
-
-            <p class="contact-item">
-                <span class="contact-label">טלפון:</span>
-                <a class="phone-link">
-                    050-1234567
-                </a>
-            </p>
-
-            <p class="contact-item">
-                <span class="contact-label">אימייל:</span>
-                <a class="email-link" href="mailto:romishoshani@walla.com">
-                    romishoshani@walla.com
-                </a>
-            </p>
+            </figure>
         </section>
 
+        <section class="content-section about-section" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <p class="section-number">01</p>
+                <div>
+                    <p class="section-kicker">מי אני</p>
+                    <h2 class="section-title" id="about-title">קצת עליי</h2>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-copy">
+                    <p>
+                        את ההתנסות שלי בתחום התחלתי בקורס DevOps. לאחר הקורס הצטרפתי לצוות DBA,
+                        ובמשך שנה וחצי צברתי ניסיון בעבודה עם מסדי נתונים ותשתיות ארגוניות.
+                    </p>
+                    <p>
+                        בהמשך חזרתי להדריך בקורס DevOps, ולאחר ההדרכה אוישתי לתפקיד ראש צוות DBA במשך
+                        שנה וחצי. כיום אני עוסקת ב-DevOps ומשלבת בעבודה ידע טכני, ראייה מערכתית
+                        וניהול משימות.
+                    </p>
+                </div>
+
+                <ul class="highlights-list" aria-label="תחומי התמחות מרכזיים">
+                    <li>
+                        <span class="highlight-icon" aria-hidden="true">01</span>
+                        <span><strong>אוטומציה</strong> ותהליכי CI/CD</span>
+                    </li>
+                    <li>
+                        <span class="highlight-icon" aria-hidden="true">02</span>
+                        <span><strong>מסדי נתונים</strong> ותשתיות ארגוניות</span>
+                    </li>
+                    <li>
+                        <span class="highlight-icon" aria-hidden="true">03</span>
+                        <span><strong>הדרכה</strong> והובלת צוותים</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section skills-section" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <p class="section-number">02</p>
+                <div>
+                    <p class="section-kicker">ארגז הכלים</p>
+                    <h2 class="section-title" id="skills-title">כישורים וכלים</h2>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skills-card">
+                    <div class="card-heading">
+                        <span class="card-icon" aria-hidden="true">&lt;/&gt;</span>
+                        <div>
+                            <p class="card-kicker">AUTOMATION &amp; DELIVERY</p>
+                            <h3 class="skills-card-title">DevOps</h3>
+                        </div>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">Docker</li>
+                        <li class="skill-item">Jenkins</li>
+                        <li class="skill-item">ArgoCD</li>
+                        <li class="skill-item">Git</li>
+                        <li class="skill-item">Kubernetes</li>
+                        <li class="skill-item">OpenShift</li>
+                        <li class="skill-item">SonarQube</li>
+                        <li class="skill-item">Artifactory</li>
+                        <li class="skill-item">Helm</li>
+                    </ul>
+                </article>
+
+                <article class="skills-card">
+                    <div class="card-heading">
+                        <span class="card-icon" aria-hidden="true">DB</span>
+                        <div>
+                            <p class="card-kicker">DATA &amp; INFRASTRUCTURE</p>
+                            <h3 class="skills-card-title">DBA</h3>
+                        </div>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">Oracle</li>
+                        <li class="skill-item">SQL Server</li>
+                        <li class="skill-item">PostgreSQL</li>
+                        <li class="skill-item">Patroni</li>
+                        <li class="skill-item">MongoDB</li>
+                        <li class="skill-item">Linux</li>
+                        <li class="skill-item">Ansible</li>
+                        <li class="skill-item">Git</li>
+                        <li class="skill-item">AWX</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <p class="section-number">03</p>
+                <div>
+                    <p class="section-kicker">עשייה מקצועית</p>
+                    <h2 class="section-title" id="projects-title">פרויקטים וניסיון</h2>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <p class="project-number">01</p>
+                    <h3 class="project-title">אוטומציה ותהליכי CI/CD</h3>
+                    <p class="project-description">
+                        בנייה ושיפור של תהליכי אוטומציה לניהול קוד, בדיקות, בנייה ופריסה
+                        עקבית של אפליקציות.
+                    </p>
+                    <ul class="project-tags" aria-label="כלים בפרויקט">
+                        <li>Jenkins</li>
+                        <li>Git</li>
+                        <li>SonarQube</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-number">02</p>
+                    <h3 class="project-title">ניהול תשתיות ופריסות</h3>
+                    <p class="project-description">
+                        ניהול תהליכי פריסה בסביבות מרובות, תוך שימוש בכלי GitOps וקונטיינרים
+                        לשיפור היציבות והשליטה בתהליך.
+                    </p>
+                    <ul class="project-tags" aria-label="כלים בפרויקט">
+                        <li>ArgoCD</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <p class="project-number">03</p>
+                    <h3 class="project-title">תשתיות מסדי נתונים</h3>
+                    <p class="project-description">
+                        עבודה עם מסדי נתונים ארגוניים, פתרונות זמינות גבוהה וניהול תשתיות
+                        בסביבות Linux ו-Windows.
+                    </p>
+                    <ul class="project-tags" aria-label="כלים בפרויקט">
+                        <li>PostgreSQL</li>
+                        <li>Patroni</li>
+                        <li>SQL Server</li>
+                        <li>Linux</li>
+                        <li>Windows</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-intro">
+                <p class="section-kicker">LET'S CONNECT</p>
+                <h2 class="section-title" id="contact-title">ליצירת קשר</h2>
+            </div>
+
+            <address class="contact-list">
+                <a class="contact-item" href="https://github.com/romishoshani12/Web-Applicatins-Task1" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-icon" aria-hidden="true">GH</span>
+                    <span class="contact-details">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">לצפייה בפרויקטים</span>
+                    </span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="contact-item" href="https://www.linkedin.com/in/%D7%A8%D7%95%D7%9E%D7%99-%D7%A9%D7%95%D7%A9%D7%A0%D7%99-748826380/" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-icon" aria-hidden="true">in</span>
+                    <span class="contact-details">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">לפרופיל המקצועי</span>
+                    </span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="contact-item" href="tel:0501234567">
+                    <span class="contact-icon" aria-hidden="true">☎</span>
+                    <span class="contact-details">
+                        <span class="contact-label">טלפון</span>
+                        <span class="contact-value" dir="ltr">050-1234567</span>
+                    </span>
+                    <span class="contact-arrow" aria-hidden="true">←</span>
+                </a>
+
+                <a class="contact-item" href="mailto:romishoshani@walla.com">
+                    <span class="contact-icon" aria-hidden="true">@</span>
+                    <span class="contact-details">
+                        <span class="contact-label">אימייל</span>
+                        <span class="contact-value" dir="ltr">romishoshani@walla.com</span>
+                    </span>
+                    <span class="contact-arrow" aria-hidden="true">←</span>
+                </a>
+            </address>
+        </section>
     </main>
 
+    <footer class="site-footer">
+        <p>רומי שושני · כרטיס ביקור דיגיטלי</p>
+        <a href="#home">חזרה למעלה ↑</a>
+    </footer>
 </body>
 </html>
